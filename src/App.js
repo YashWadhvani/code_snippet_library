@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import LandingPage from "./components/LandingPage";
+import Navibar from "./components/Navibar";
+import Card from "./components/Card";
+import { Container } from "react-bootstrap";
 
 function App() {
+  // const logoStyle = { width: "100px", height: "100px", margin: "5%" };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navibar />
+      <LandingPage />
+      <Container className="Languages">
+        <Card
+          title="C"
+          info="Usefull Snippets in C Programming Language"
+          imgSrc="./img/Logos/Languages/c.png"
+          destPage="/c"
+        />
+        <Card
+          title="C++"
+          info="Usefull Snippets in C++ Programming Language"
+          imgSrc="./img/Logos/Languages/c++.png"
+          destPage="/cpp"
+        />
+        <Card
+          title="Python"
+          info="Usefull Snippets in Python Programming Language"
+          imgSrc="./img/Logos/Languages/python.png"
+          destPage="/py"
+        />
+        <Card
+          title="JavaScript"
+          info="Usefull Snippets in JavaScript Programming Language"
+          imgSrc="./img/Logos/Languages/js.png"
+          destPage="/js"
+        />
+      </Container>
+    </>
   );
 }
 

@@ -1,13 +1,121 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.brandLogo {
+  height: 80px;
+  width: 200px;
+}
+
+.heroToast {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.heroImg {
+  height: 350px;
+  width: 600px;
+  /* margin: 5%;
+  margin-left: 10px; */
+}
+
+.heroText {
+  margin: 5%;
+  margin-left: 10%;
+  color: white;
+  width: 500px;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Cards */
+.card {
+  margin-top: 100px;
+  height: 256px;
+  width: 256px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+  background-color: #292b2c;
+  /* border: #212529 7px solid; */
+  /* border-radius: 13px; */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 15px; */
+  /* margin: 10%; */
+  /* margin-left: 12%; */
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(70, 85, 85, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  transition: 2s;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  margin-top: 14px;
+  margin-left: 25px;
+  font-size: 35px;
+  font-weight: 450;
+}
+
+.card-info {
+  margin-left: 20px;
+  font-family: "AR One Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+  height: 100px;
+  width: auto;
+}
+
+.cardbtn img {
+  border-radius: 100px;
+  padding: 10px;
+  background: #212529;
+  height: 50px;
+  width: 50px;
+  margin-left: 80%;
+  margin-top: -15%;
+}
+
+/* Cards */
+
+.Languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
