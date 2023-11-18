@@ -1,17 +1,15 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import LandingPage from "./components/LandingPage";
-import Navibar from "./components/Navibar";
-import Card from "./components/Card";
 import { Container } from "react-bootstrap";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import Hero from "./components/Hero";
 
 function App() {
-  // const logoStyle = { width: "100px", height: "100px", margin: "5%" };
   return (
     <>
-      <Navibar />
-      <LandingPage />
+      <Navbar />
+      <Hero />
       <Container className="Languages">
         <Card
           title="C"

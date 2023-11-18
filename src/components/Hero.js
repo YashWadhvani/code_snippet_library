@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-export default function LandingPage() {
+export default function Hero() {
   return (
     <div>
       <Container className="heroToast bg-dark">
