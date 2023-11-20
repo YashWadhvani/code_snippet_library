@@ -1,41 +1,22 @@
 import "./App.css";
 import React from "react";
-import { Container } from "react-bootstrap";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Snippets from "./pages/Snippets";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Card from "./components/Card";
-import Hero from "./components/Hero";
+import Codes from "./pages/Codes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Container className="Languages">
-        <Card
-          title="C"
-          info="Usefull Snippets in C Programming Language"
-          imgSrc="./img/Logos/Languages/c.png"
-          destPage="/c"
-        />
-        <Card
-          title="C++"
-          info="Usefull Snippets in C++ Programming Language"
-          imgSrc="./img/Logos/Languages/c++.png"
-          destPage="/cpp"
-        />
-        <Card
-          title="Python"
-          info="Usefull Snippets in Python Programming Language"
-          imgSrc="./img/Logos/Languages/python.png"
-          destPage="/py"
-        />
-        <Card
-          title="JavaScript"
-          info="Usefull Snippets in JavaScript Programming Language"
-          imgSrc="./img/Logos/Languages/js.png"
-          destPage="/js"
-        />
-      </Container>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/select" element={<Snippets />} />
+        <Route exact path="/snippets/:id" element={<Codes />} />
+      </Routes>
     </>
   );
 }

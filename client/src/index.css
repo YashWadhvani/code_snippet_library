@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,7 +45,7 @@ code {
 }
 
 /* Cards */
-.card {
+.MyCard {
   margin-top: 100px;
   height: 256px;
   width: 256px;
@@ -55,20 +53,15 @@ code {
   position: relative;
   margin-bottom: 100px;
   background-color: #292b2c;
-  /* border: #212529 7px solid; */
-  /* border-radius: 13px; */
 }
 
-.card-img {
+.cardImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 15px; */
-  /* margin: 10%; */
-  /* margin-left: 12%; */
 }
 
-.card-body {
+.cardBody {
   width: 100%;
   height: 100%;
   top: 0;
@@ -80,11 +73,11 @@ code {
   transition: 2s;
 }
 
-.card:hover .card-body {
+.MyCard:hover .cardBody {
   right: 0;
 }
 
-.card-title {
+.cardTitle {
   font-family: "Poppins", sans-serif;
   margin-top: 14px;
   margin-left: 25px;
@@ -92,7 +85,7 @@ code {
   font-weight: 450;
 }
 
-.card-info {
+.cardInfo {
   margin-left: 20px;
   font-family: "AR One Sans", sans-serif;
   font-size: 15px;
@@ -102,7 +95,7 @@ code {
   width: auto;
 }
 
-.cardbtn img {
+.cardBtn img {
   border-radius: 100px;
   padding: 10px;
   background: #212529;
@@ -118,4 +111,33 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right bottom,
+    rgba(48, 83, 94, 1),
+    rgba(253, 160, 133, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left bottom,
+    rgba(50, 90, 150, 1),
+    rgba(120, 40, 100, 1)
+  );
+}
+
+.bg-dark {
+  background-color: #212529 !important;
 }
