@@ -1,7 +1,7 @@
 // About Me & Sarjak with a Contact Us Form
 import React from "react";
-import ProfileCard from "../components/ProfileCard";
 import { Container } from "react-bootstrap";
+import ProfileCard from "../components/ProfileCard";
 
 export default function About() {
   return (

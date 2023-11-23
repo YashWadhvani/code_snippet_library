@@ -141,3 +141,47 @@ h1 {
 .bg-dark {
   background-color: #212529 !important;
 }
+
+.insta-icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 20%;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+.insta-icon:after,
+.insta-icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+.insta-icon:before {
+  border-radius: 20%;
+}
+.insta-icon:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.github {
+  font-size: 36px;
+  color: #2b3137;
+}
+
+.linkedin {
+  font-size: 36px;
+  color: #0077b5;
+}

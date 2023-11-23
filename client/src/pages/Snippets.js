@@ -27,7 +27,7 @@ export default function Snippets() {
           title="Python"
           info="Usefull Snippets in Python Programming Language"
           imgSrc="./img/Logos/Languages/python.png"
-          destPage="/snippets/py"
+          destPage="/snippets/python"
         />
         <Card
           title="JavaScript"
