@@ -21,7 +21,7 @@ export default function Snippets() {
           title="C++"
           info="Usefull Snippets in C++ Programming Language"
           imgSrc="./img/Logos/Languages/c++.png"
-          destPage="/snippets/cpp"
+          destPage="/snippets/c++"
         />
         <Card
           title="Python"
