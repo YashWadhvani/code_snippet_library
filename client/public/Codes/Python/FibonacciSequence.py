@@ -12,8 +12,8 @@ else:
     print("Fibonacci sequence:")
     while nterms > count:
 
+        print(n1)
         n3 = n1 + n2
         n1 = n2
         n2 = n3
-        print(n1)
         count += 1
