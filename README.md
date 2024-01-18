@@ -1,0 +1,3 @@
+A Website that has a collection of Code Snippets of problems that can be useful for every beginner.
+This Website contains Code Snippets in various Languages such as C, C++, Python, JavaScript and Java.
+All the basic programs which can be used to build the fundamental concepts and logic required for programming are already uploaded, advanced programs coming soon....
