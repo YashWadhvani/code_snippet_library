@@ -33,7 +33,13 @@ export default function Snippets() {
           title="JavaScript"
           info="Usefull Snippets in JavaScript Programming Language"
           imgSrc="./img/Logos/Languages/js.png"
-          destPage="/snippets/js"
+          destPage="/snippets/javascript"
+        />
+        <Card
+          title="Java"
+          info="Usefull Snippets in Java Programming Language"
+          imgSrc="./img/Logos/Languages/java.png"
+          destPage="/snippets/java"
         />
       </Container>
     </>
