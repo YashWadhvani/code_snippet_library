@@ -33,6 +33,7 @@ app.get("/", (req, res) => {
 
 app.get("/snippets", async (req, res) => {
   const snippets = await Snippet.find()
+    .sort({ title: 1 })
     .then((snippets) => res.json(snippets))
     .catch((e) => console.log(e));
 });
