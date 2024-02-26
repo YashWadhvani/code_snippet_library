@@ -38,6 +38,38 @@ export default function About() {
           linkedinLink="https://www.linkedin.com/in/sarjakpatel03"
         />
       </Container>
+      <Container className="bg-dark heroToast">
+        <ProfileCard
+          className="m-0"
+          imgURL="img/Profile/chinmay.jpg"
+          name="Chinmay Khanzode"
+          title="Web Developer"
+          mail="20220702094@karnavatiuniversity.edu.in"
+          phone="8128176740"
+          university="Karnavati University"
+          programme="B Tech CSE (Specialisation in AI/ML)"
+          school="The Aditya Birla Public School"
+          board="CBSE"
+          instagramLink="https://www.instagram.com/the_ckkk)"
+          gitHubLink="https://github.com/ChinmayKhanzode"
+          linkedinLink="https://www.linkedin.com/in/chinmaykhanzode"
+        />
+        <ProfileCard
+          imgURL="img/Profile/aalay.jpg"
+          name="Aalay Kabariya"
+          title="Web Developer"
+          mail="20220702096@karnavatiuniversity.edu.in"
+          phone="8780539523"
+          university="Karnavati University"
+          programme="B Tech CSE (Specialisation in AI/ML)"
+          school="Deepak Higher Secondary School"
+          board="CBSE"
+          instagramLink="https://www.https://www.instagram.com/?hl=en.com/the_ckkk"
+          gitHubLink="https://github.com/https://github.com/Aalay-kabariya"
+          linkedinLink="https://www.linkedin.com/in/aalay-kabariya-644023280/"
+        />
+      </Container>
     </div>
+    
   );
 }
