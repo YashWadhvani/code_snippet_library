@@ -26,17 +26,17 @@ export default function Navibar() {
                   Home
                 </Link>
               </Nav>
-              <Nav className="text-white">
-                <Link to="/about" className="nav-link">
-                  About Us
-                </Link>
-              </Nav>
               {/* <Nav.Link className="text-white nav-link" href="../#LangSelectHead">
                 Snippets
               </Nav.Link> */}
               <Nav className="text-white">
                 <Link to="/select" className="nav-link">
                   Snippets
+                </Link>
+              </Nav>
+              <Nav className="text-white">
+                <Link to="/about" className="nav-link">
+                  About Us
                 </Link>
               </Nav>
             </Nav>
