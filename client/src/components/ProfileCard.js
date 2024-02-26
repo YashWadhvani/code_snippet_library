@@ -12,12 +12,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ProfileCard(props) {
   return (
-    <section className="vh-100">
-      <Container className="py-5 h-100 bg-dark">
+    <section className="vh-0">
+      <Container className="py-1 h-100 bg-dark">
         <Row className="justify-content-center align-items-center h-100">
           <Col lg="12" className="mb-4 mb-lg-0">
             <Card
-              className="mb-3 gradient-custom text-bg-dark"
+              className="mb-5 gradient-custom text-bg-dark"
               style={{ borderRadius: ".5rem" }}
             >
               <Row className="g-0">
