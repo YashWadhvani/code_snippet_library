@@ -5,6 +5,7 @@ const snippetSchema = new mongoose.Schema({
   description: String,
   imageUrl: String,
   sourceCode: String,
+  snippetCount: Number,
 });
 
 const Snippet = mongoose.model("snippets", snippetSchema);
