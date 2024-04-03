@@ -6,8 +6,19 @@ import Snippets from "./pages/Snippets";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Codes from "./pages/Codes";
+import axios from "axios";
 
 function App() {
+  const executePythonScript = () => {
+    axios
+      .post("/execute-python-script")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
   return (
     <>
       <Navbar />
