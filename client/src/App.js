@@ -46,7 +46,6 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Codes from "./pages/Codes";
 import axios from "axios";
-import Login from "./pages/Login";
 
 function App() {
   const executePythonScript = () => {
@@ -67,11 +66,9 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/select" element={<Snippets />} />
         <Route exact path="/snippets/:id" element={<Codes />} />
-        <Route exact path="/login" element={<Login />} />
       </Routes>
     </>
   );
 }
 
 export default App;
-
