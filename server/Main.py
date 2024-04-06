@@ -49,7 +49,7 @@ def save_language_vs_count_plot():
     # for i, title in enumerate(x):
     #     plt.text(i, y[i], title, ha='center', va='center', rotation=90)
 
-    plt.xlabel('Titles and Languages')
+    plt.xlabel('Languages')
     plt.ylabel('Snippet Count')
     plt.xticks(rotation=90)
     plt.tight_layout()
