@@ -1,10 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import Login from "../pages/Login";
 
 export default function Navibar() {
+  const [showLogin, setShowLogin] = useState(false);
+
+  const toggleLogin = () => {
+    setShowLogin(!showLogin);
+  };
   return (
     <>
       <Navbar expand="lg" className="bg-dark" data-bs-theme="dark">
@@ -39,10 +45,16 @@ export default function Navibar() {
                   About Us
                 </Link>
               </Nav>
+              <Nav className="text-white">
+                <Link to="/login" className="nav-link" onClick={toggleLogin} >
+                  Login
+                </Link>
+              </Nav>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {showLogin && <Login onClose={toggleLogin} />}
     </>
   );
 }
