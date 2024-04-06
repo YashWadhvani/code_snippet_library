@@ -31,6 +31,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { FaFacebookF, FaTwitter, FaGoogle } from "react-icons/fa";
+import GoogleButton from "../components/GoogleButton";
 
 function Login() {
   return (
@@ -73,17 +74,14 @@ function Login() {
                       Login
                     </Button>
                   </Form>
-                  <div className="d-flex justify-content-space-around text-center px-5 mt-4 pt-1">
-                    <a href="#!" className="text-white me-4 loginLogos">
-                      <FaFacebookF fontSize={"30px"} />
-                    </a>
-                    <a href="#!" className="text-white me-4 loginLogos">
-                      <FaGoogle fontSize={"30px"} />
-                    </a>
-                    <a href="#!" className="text-white  loginLogos">
-                      <FaTwitter fontSize={"30px"} />
-                    </a>
+                  <br />
+                  <div class="or-container">
+                    <hr />
+                    <span class="or">OR</span>
+                    <hr />
                   </div>
+                  <br />
+                  <GoogleButton />
                 </div>
                 <div>
                   <p className="mb-0">

@@ -190,7 +190,6 @@ h1 {
   color: #0077b5;
 }
 
-
 /* Login CSS */
 
 .login-popup {
@@ -257,30 +256,47 @@ form button:hover {
   background-color: #0056b3;
 }
 
-.formInput::placeholder{
+.formInput::placeholder {
   color: white;
 }
 
-.formInput::placeholder:focus{
+.formInput::placeholder:focus {
   color: white;
 }
 
-.formInput{
+.formInput {
   border-radius: 20px;
   background-color: transparent;
   color: white;
 }
 
-.formInput:focus{
+.formInput:focus {
   border-radius: 20px;
-  background-color: transparent;  
+  background-color: transparent;
   color: white;
 }
 
-.loginBtn{
+.loginBtn {
   border-radius: 20px;
 }
 
-.loginLogos:hover{
-scale: 1.25;
+.loginLogos:hover {
+  scale: 1.25;
+}
+
+.or-container {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Distribute elements evenly with space at ends */
+}
+
+.or-container hr {
+  width: 200px;
+  border: 1px solid #fff; /* Adjust border color as needed */
+  margin: 0 10px; /* Add space between line and "OR" */
+}
+
+.or {
+  text-align: center; /* Center text horizontally */
+  font-weight: bold; /* Optionally make "OR" bold */
 }
