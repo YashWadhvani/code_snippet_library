@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -46,7 +46,7 @@ export default function Navibar() {
                 </Link>
               </Nav>
               <Nav className="text-white">
-    <Link to="/login" className="nav-link" onClick={toggleLogin} >
+                <Link to="/login" className="nav-link">
                   Login
                 </Link>
               </Nav>
