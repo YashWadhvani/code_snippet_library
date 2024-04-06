@@ -46,7 +46,7 @@ export default function Navibar() {
                 </Link>
               </Nav>
               <Nav className="text-white">
-                <Link to="/login" className="nav-link" onClick={toggleLogin} >
+    <Link to="/login" className="nav-link" onClick={toggleLogin} >
                   Login
                 </Link>
               </Nav>
