@@ -23,7 +23,7 @@ export default function GoogleButton() {
       <div
         className="g_id_signin"
         data-type="standard"
-        data-size="medium"
+        data-size="large"
         data-theme="outline"
         data-text="continue_with"
         data-shape="pill"
