@@ -46,13 +46,13 @@ function Login() {
                   <p className="text-white-50 mb-5">Please enter your login and password!</p>
                   <Form>
                     <Form.Group className="mb-4" controlId="formBasicEmail">
-                      <Form.Control type="email" placeholder="Email" />
+                      <Form.Control type="email" placeholder="Email" className="formInput"/>
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="formBasicPassword">
-                      <Form.Control type="password" placeholder="Password" />
+                      <Form.Control type="password" placeholder="Password" className="formInput"/>
                     </Form.Group>
                     <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
-                    <Button variant="outline-light" className="btn-lg px-5" type="submit">Login</Button>
+                    <Button variant="outline-light" className="btn-lg px-5 loginBtn"  type="submit" >Login</Button>
                   </Form>
                   <div className="d-flex justify-content-space-around text-center px-5 mt-4 pt-1">
                     <a href="#!" className="text-white me-4"><FaFacebookF fontSize={"30px"}/></a>
@@ -73,3 +73,5 @@ function Login() {
 }
 
 export default Login;
+
+

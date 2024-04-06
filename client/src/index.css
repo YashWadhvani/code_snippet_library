@@ -256,3 +256,27 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
+
+.formInput::placeholder{
+  color: white;
+}
+
+.formInput::placeholder:focus{
+  color: white;
+}
+
+.formInput{
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.formInput:focus{
+  border-radius: 20px;
+  background-color: transparent;  
+  color: white;
+}
+
+.loginBtn{
+  border-radius: 20px;
+}
