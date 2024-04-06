@@ -1,8 +1,38 @@
+// // import React from 'react';
+// // import "../index.css";
+
+// // function Login({ onClose }) {
+// //   return (
+// //     <div className="login-popup">
+// //       <div className="login-content">
+// //         <span className="close" onClick={onClose}>&times;</span>
+// //         <h2>Login</h2>
+// //         {/* Add your social media links here */}
+// //         {/* <div className="social-links">
+// //           <a href="#">Facebook</a>
+// //           <a href="#">Twitter</a>
+// //           <a href="#">LinkedIn</a>
+// //         </div> */}
+// //         {/* Add your login form fields here */}
+// //         <form>
+// //           <label>Email:</label>
+// //           <input type="email" />
+// //           <label>Password:</label>
+// //           <input type="password" />
+// //           <button type="submit">Login</button>
+// //         </form>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // export default Login;
+
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { FaFacebookF, FaTwitter, FaGoogle } from "react-icons/fa";
 
-export default function Login() {
+function Login() {
   return (
     <section className="vh-100">
       <Container className="py-5 h-100">
@@ -13,14 +43,22 @@ export default function Login() {
                 <div className="mb-md-5 mt-md-4 pb-5">
                   <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
                   <p className="text-white-50 mb-5">
-                    Please enter your Email and Password!
+                    Please enter your login and password!
                   </p>
                   <Form>
                     <Form.Group className="mb-4" controlId="formBasicEmail">
-                      <Form.Control type="email" placeholder="Email" />
+                      <Form.Control
+                        type="email"
+                        placeholder="Email"
+                        className="formInput"
+                      />
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="formBasicPassword">
-                      <Form.Control type="password" placeholder="Password" />
+                      <Form.Control
+                        type="password"
+                        placeholder="Password"
+                        className="formInput"
+                      />
                     </Form.Group>
                     <p className="small mb-5 pb-lg-2">
                       <a className="text-white-50" href="#!">
@@ -29,20 +67,20 @@ export default function Login() {
                     </p>
                     <Button
                       variant="outline-light"
-                      className="btn-lg px-5"
+                      className="btn-lg px-5 loginBtn"
                       type="submit"
                     >
                       Login
                     </Button>
                   </Form>
                   <div className="d-flex justify-content-space-around text-center px-5 mt-4 pt-1">
-                    <a href="#!" className="text-white me-4">
+                    <a href="#!" className="text-white me-4 loginLogos">
                       <FaFacebookF fontSize={"30px"} />
                     </a>
-                    <a href="#!" className="text-white me-4">
+                    <a href="#!" className="text-white me-4 loginLogos">
                       <FaGoogle fontSize={"30px"} />
                     </a>
-                    <a href="#!" className="text-white ">
+                    <a href="#!" className="text-white  loginLogos">
                       <FaTwitter fontSize={"30px"} />
                     </a>
                   </div>
@@ -63,3 +101,4 @@ export default function Login() {
     </section>
   );
 }
+export default Login;

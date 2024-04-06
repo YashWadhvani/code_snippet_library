@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Codes from "./pages/Codes";
 import axios from "axios";
 import Login from "./pages/Login";
+import Sign_up from "./pages/Signup";
 
 function App() {
   const executePythonScript = () => {
@@ -29,7 +30,7 @@ function App() {
         <Route exact path="/select" element={<Snippets />} />
         <Route exact path="/snippets/:id" element={<Codes />} />
         <Route exact path="/login" element={<Login />} />
-        {/* <Route exact path="/signup" element={<Signup />} /> */}
+        <Route exact path="/signup" element={<Sign_up />} />
       </Routes>
     </>
   );
