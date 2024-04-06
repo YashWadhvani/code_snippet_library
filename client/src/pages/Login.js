@@ -71,7 +71,4 @@ function Login() {
     </section>
   );
 }
-
 export default Login;
-
-
