@@ -43,7 +43,7 @@ function Login() {
                 <div className="mb-md-5 mt-md-4 pb-5">
                   <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
                   <p className="text-white-50 mb-5">
-                    Please enter your login and password!
+                    Please Enter your Email and Password!
                   </p>
                   <Form>
                     <Form.Group className="mb-4" controlId="formBasicEmail">
