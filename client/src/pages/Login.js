@@ -55,9 +55,9 @@ function Login() {
                     <Button variant="outline-light" className="btn-lg px-5 loginBtn"  type="submit" >Login</Button>
                   </Form>
                   <div className="d-flex justify-content-space-around text-center px-5 mt-4 pt-1">
-                    <a href="#!" className="text-white me-4"><FaFacebookF fontSize={"30px"}/></a>
-                    <a href="#!" className="text-white me-4"><FaGoogle fontSize={"30px"}/></a>
-                    <a href="#!" className="text-white "><FaTwitter fontSize={"30px"}/></a>
+                    <a href="#!" className="text-white me-4 loginLogos"><FaFacebookF fontSize={"30px"}/></a>
+                    <a href="#!" className="text-white me-4 loginLogos"><FaGoogle fontSize={"30px"}/></a>
+                    <a href="#!" className="text-white  loginLogos"><FaTwitter fontSize={"30px"}/></a>
                   </div>
                 </div>
                 <div>

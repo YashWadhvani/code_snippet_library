@@ -280,3 +280,7 @@ form button:hover {
 .loginBtn{
   border-radius: 20px;
 }
+
+.loginLogos:hover{
+scale: 1.25;
+}
