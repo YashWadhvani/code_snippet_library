@@ -1,11 +1,11 @@
 import express from "express";
-import path from "path";
+// import path from "path";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import { spawn } from "child_process";
 import connectDB from "./config/db.js";
-import Snippet from "./models/snippetModal.js";
-import { ChildProcess } from "child_process";
+import Snippet from "./models/Snippet.js";
+// import { ChildProcess } from "child_process";
 // import snippetForm from "./snippetForm.js";
 
 //env config
