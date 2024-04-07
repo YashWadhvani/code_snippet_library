@@ -12,7 +12,8 @@ export default function GoogleButton() {
     // Initialize Google One Tap
     window.onload = function () {
       window.google.accounts.id.initialize({
-        client_id: "YOUR_GOOGLE_CLIENT_ID",
+        client_id:
+          "63263055697-2he94hvftml8jkoqrursffbsjdug41rt.apps.googleusercontent.com",
         callback: handleCredentialResponse,
       });
     };

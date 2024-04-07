@@ -32,7 +32,7 @@ function Login() {
 
       if (response.ok) {
         // Redirect to desired page upon successful login
-        navigate("/");
+        navigate("https://code-snippet-library.vercel.app/");
       } else {
         // Handle login failure
         console.error("Login failed!");

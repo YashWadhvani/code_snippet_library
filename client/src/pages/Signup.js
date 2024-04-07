@@ -33,7 +33,7 @@ function Sign_up() {
 
       if (response.ok) {
         // Redirect to desired page upon successful signup
-        navigate("/");
+        navigate("https://code-snippet-library.vercel.app/");
       } else {
         // Handle signup failure
         console.error("Signup failed!");
