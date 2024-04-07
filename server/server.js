@@ -5,6 +5,8 @@ import morgan from "morgan";
 import { spawn } from "child_process";
 import connectDB from "./config/db.js";
 import Snippet from "./models/Snippet.js";
+import passport from "passport";
+import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 // import { ChildProcess } from "child_process";
 // import snippetForm from "./snippetForm.js";
 
@@ -83,6 +85,44 @@ app.post("/snippets/:id/increment", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
+
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID:
+        "63263055697-2he94hvftml8jkoqrursffbsjdug41rt.apps.googleusercontent.com",
+      clientSecret: "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",
+      callbackURL: "/auth/google/callback", // This is the callback URL
+    },
+    (accessToken, refreshToken, profile, done) => {
+      // Find or create the user based on Google profile information
+      // ... (user data handling logic)
+      done(null, user); // Pass the user object to Passport
+    }
+  )
+);
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+  // ... (logic to retrieve user data from database)
+  done(err, user);
+});
+
+app.post(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
+
+app.post(
+  "/auth/google/callback",
+  passport.authenticate("google", {
+    successRedirect: "/", // Redirect to success page
+    failureRedirect: "/login", // Redirect on failure
+  })
+);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server Running on port ${process.env.PORT}.`);
