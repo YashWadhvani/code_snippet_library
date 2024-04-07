@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import { FaFacebookF, FaTwitter, FaGoogle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useHistory hook for redirection
 import GoogleButton from "../components/GoogleButton";
 
 function Sign_up() {
+  const navigate = useNavigate(); // Initialize useHistory hook
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  // Update form data on input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Redirect to desired page upon successful signup
+        navigate("/");
+      } else {
+        // Handle signup failure
+        console.error("Signup failed!");
+      }
+    } catch (error) {
+      console.error("Error occurred during signup:", error);
+    }
+  };
+
   return (
     <section className="vh-100">
       <Container className="py-0 h-75">
@@ -16,12 +55,15 @@ function Sign_up() {
                   <p className="text-white-50 my-4">
                     Please Enter your Details!
                   </p>
-                  <Form>
+                  <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-4" controlId="formBasicName">
                       <Form.Control
                         type="Name"
                         placeholder="Name"
                         className="formInput"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="formBasicEmail">
@@ -29,6 +71,9 @@ function Sign_up() {
                         type="email"
                         placeholder="Email"
                         className="formInput"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="formBasicPassword">
@@ -36,6 +81,9 @@ function Sign_up() {
                         type="password"
                         placeholder="Password"
                         className="formInput"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
                       />
                     </Form.Group>
                     <Button

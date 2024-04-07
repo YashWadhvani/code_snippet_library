@@ -1,8 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import GoogleButton from "../components/GoogleButton";
 
 function Login() {
+  const navigate = useNavigate(); // Initialize useHistory hook
+
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  // Update form data on input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Redirect to desired page upon successful login
+        navigate("/");
+      } else {
+        // Handle login failure
+        console.error("Login failed!");
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+    }
+  };
+
   return (
     <section className="vh-100">
       <Container className="py-0 h-75">
@@ -15,12 +54,15 @@ function Login() {
                   <p className="text-white-50 mb-5">
                     Please Enter your Email and Password!
                   </p>
-                  <Form>
+                  <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-4" controlId="formBasicEmail">
                       <Form.Control
                         type="email"
                         placeholder="Email"
                         className="formInput"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="formBasicPassword">
@@ -28,6 +70,9 @@ function Login() {
                         type="password"
                         placeholder="Password"
                         className="formInput"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
                       />
                     </Form.Group>
 

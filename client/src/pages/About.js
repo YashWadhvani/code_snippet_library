@@ -24,6 +24,38 @@ export default function About() {
           linkedinLink="https://www.linkedin.com/in/yash-wadhvani"
         />
         <ProfileCard
+          className="m-0"
+          imgURL="img/Profile/Shreemad.jpg"
+          name="Shreemad Kumbhani"
+          title="Web Developer"
+          mail="20220702036@karnavatiuniversity.edu.in"
+          phone="9825909359"
+          university="Karnavati University"
+          programme="B Tech CSE"
+          school="Delhi Public School"
+          board="CBSE"
+          instagramLink="https://www.instagram.com/shreemad_k14"
+          gitHubLink="https://github.com/shreemadkumbhani"
+          linkedinLink="https://www.linkedin.com/in/shreemad-kumbhani"
+        />
+      </Container>
+      <Container className="bg-dark heroToast">
+        <ProfileCard
+          className="m-0"
+          imgURL="img/Profile/Devam.jpg"
+          name="Devam Solanki"
+          title="Web Developer"
+          mail="20220702012@karnavatiuniversity.edu.in"
+          phone="9313729314"
+          university="Karnavati University"
+          programme="B Tech CSE"
+          school="New Tulip International School"
+          board="CBSE"
+          instagramLink="https://www.instagram.com/devamsolanki_009"
+          gitHubLink="https://github.com/devamsolanki009"
+          linkedinLink="https://www.linkedin.com/in/devam-solanki-40b248244"
+        />
+        <ProfileCard
           imgURL="img/Profile/Sarjak.jpg"
           name="Sarjak Patel"
           title="Web Developer"
@@ -70,6 +102,5 @@ export default function About() {
         />
       </Container>
     </div>
-    
   );
 }
