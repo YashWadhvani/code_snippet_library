@@ -23,7 +23,7 @@ export default function About() {
           gitHubLink="https://github.com/YashWadhvani"
           linkedinLink="https://www.linkedin.com/in/yash-wadhvani"
         />
-        <ProfileCard
+        {/* <ProfileCard
           className="m-0"
           imgURL="img/Profile/Shreemad.jpg"
           name="Shreemad Kumbhani"
@@ -37,10 +37,10 @@ export default function About() {
           instagramLink="https://www.instagram.com/shreemad_k14"
           gitHubLink="https://github.com/shreemadkumbhani"
           linkedinLink="https://www.linkedin.com/in/shreemad-kumbhani"
-        />
-      </Container>
-      <Container className="bg-dark heroToast">
-        <ProfileCard
+        /> */}
+        {/* </Container>
+      <Container className="bg-dark heroToast"> */}
+        {/* <ProfileCard
           className="m-0"
           imgURL="img/Profile/Devam.jpg"
           name="Devam Solanki"
@@ -54,7 +54,7 @@ export default function About() {
           instagramLink="https://www.instagram.com/devamsolanki_009"
           gitHubLink="https://github.com/devamsolanki009"
           linkedinLink="https://www.linkedin.com/in/devam-solanki-40b248244"
-        />
+        /> */}
         <ProfileCard
           imgURL="img/Profile/Sarjak.jpg"
           name="Sarjak Patel"
@@ -101,6 +101,22 @@ export default function About() {
           linkedinLink="https://www.linkedin.com/in/aalay-kabariya-644023280/"
         />
       </Container>
+      {/* <Container className="bg-dark heroToast">
+        <ProfileCard
+          imgURL="img/Profile/aalay.jpg"
+          name="Rishi Mehta"
+          title="Web Developer"
+          mail="20220702067@karnavatiuniversity.edu.in"
+          phone="9898786122"
+          university="Karnavati University"
+          programme="B Tech CSE (Specialisation in AI/ML)"
+          school="SSV Gyan Kendra"
+          board="CBSE"
+          instagramLink="https://www.https://www.instagram.com/rishim1912"
+          gitHubLink="https://github.com/https://github.com/rishim1912"
+          linkedinLink="https://www.linkedin.com/in/aalay-kabariya-644023280/"
+        />
+      </Container> */}
     </div>
   );
 }
