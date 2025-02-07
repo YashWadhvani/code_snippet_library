@@ -11,7 +11,7 @@ export default function Codes() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.API_URL}/snippets`)
+      .get(`${process.env.REACT_APP_API_URL}/snippets`)
       .then((response) => {
         setSnippet(response.data);
         console.log(response.data);
@@ -22,7 +22,7 @@ export default function Codes() {
   const handleSnippetView = async (snippetId) => {
     try {
       const response = await axios.post(
-        `${process.env.API_URL}/snippets/${snippetId}/increment`
+        `${process.env.REACT_APP_API_URL}/snippets/${snippetId}/increment`
       );
       if (response.status === 200) {
         // Update the snippet count in the local state
